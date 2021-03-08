@@ -10,21 +10,18 @@ fields:
 - type: text
   name: title
   label: title
-- type: text
-  name: author
-  label: author
-- name: author2
+- name: author
   type: select
-  default: []
+  default: sal
   config:
-    required: false
+    required: true
     options: []
     source:
       type: documents
       section: configuration
       file: _config.yml
       path: authors
-  label: author2
+  label: author
 - name: categories
   type: tag_list
   default: []
