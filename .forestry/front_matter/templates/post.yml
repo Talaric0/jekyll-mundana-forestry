@@ -13,6 +13,18 @@ fields:
 - type: text
   name: author
   label: author
+- name: author2
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: configuration
+      file: _config.yml
+      path: authors
+  label: author2
 - name: categories
   type: tag_list
   default: []
